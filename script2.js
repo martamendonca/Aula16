@@ -27,17 +27,17 @@ $('#buttonStart').click(function () {
 
             this.actualBook = this.filaBooks.dequeue(); //funcao que retira livros e esta definida numa classe em baixo (vai retirar o primeiro elemento)
             
-            if (actualBook != null){
+            // if (...... != null){
 
                 this.actualBook.render(); //vai correr a funcao render para aparecer o livro na interface
             
                 this.viewedBooks.enqueue(this.actualBook); //fila viewedbooks com os livros que foram retirados da fila books
-            }
-            else {
-                $("#mainPage").hide();
-                $("#endPage").show();
+            // }
+            // else {
+                // $("#mainPage").hide();
+                // $("#endPage").show();
 
-            }
+            // }
 
         }
 
